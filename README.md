@@ -1,73 +1,111 @@
-# React + TypeScript + Vite
+# AI Capability Self-Assessment Tool
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight, static, browser-based self-assessment application for reflecting on organisational AI capability across six domains, based on the **CloudPedagogy AI Capability Framework**.
 
-Currently, two official plugins are available:
+This tool is designed for use in education, research, and public-service contexts. It supports reflective discussion, sense-making, and capability development rather than auditing or benchmarking.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The AI Capability Self-Assessment helps individuals and teams explore how well their organisation is currently positioned to use artificial intelligence responsibly, effectively, and sustainably.
 
-## Expanding the ESLint configuration
+Rather than focusing on specific AI tools, the assessment examines capability across six interdependent domains:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Awareness**
+- **Human–AI Co-Agency**
+- **Applied Practice & Innovation**
+- **Ethics, Equity & Impact**
+- **Decision-Making & Governance**
+- **Reflection, Learning & Renewal**
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Outputs
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+The assessment provides:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Domain-level scores and capability bands  
+- A visual capability profile (radar and bar charts)  
+- Derived indicators  
+- Narrative summaries, priority actions, and risks (where applicable)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Design Principles
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+This application is intentionally:
+
+- **Framework-led** – grounded in the CloudPedagogy AI Capability Framework  
+- **Reflective** – encourages judgement and discussion, not compliance  
+- **Non-prescriptive** – avoids tool-specific or vendor-specific guidance  
+- **Static and private** – runs entirely in the browser with no backend  
+- **Explainable** – rule-based interpretation rather than opaque scoring  
+
+No data is stored, transmitted, or tracked.
+
+---
+
+## How the Assessment Works
+
+### 1. Question Set
+
+Users respond to 24 statements (4 per domain), selecting one of four maturity levels (e.g. *Not in place* → *Embedded and reviewed*).
+
+### 2. Scoring
+
+Responses are converted into domain scores (0–100) and mapped to qualitative capability bands (e.g. *Emerging*, *Developing*, *Established*).
+
+### 3. Interpretation Engine
+
+A transparent, rule-based engine interprets patterns across domains to generate:
+
+- Narrative summaries  
+- Prioritised actions  
+- Key risks (where relevant)  
+
+Multiple rules can apply simultaneously, allowing nuanced interpretations for mixed profiles.
+
+### 4. Visualisation
+
+Results are displayed using simple radar and bar charts to support discussion and sense-making.
+
+---
+
+## Intended Use
+
+This tool can be used for:
+
+- Individual reflection by educators, researchers, or leaders  
+- Team-based discussions or workshops  
+- Capability-building conversations  
+- Early-stage organisational sense-checks  
+
+It is particularly suited to:
+
+- Higher education institutions  
+- Research organisations  
+- Public and third-sector bodies  
+
+---
+
+## What This Tool Is Not
+
+❌ Not an audit or compliance tool  
+❌ Not a benchmark against other organisations  
+❌ Not a maturity model tied to specific technologies  
+❌ Not a diagnostic of individual performance  
+
+The outputs should be treated as starting points for discussion, not definitive judgements.
+
+---
+
+## Running the Application Locally
+
+### Prerequisites
+
+- Node.js (v20+ recommended)  
+- npm  
+
+### Install Dependencies
+
+```bash
+npm install
