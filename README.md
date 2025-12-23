@@ -70,6 +70,4 @@ It does not constitute professional, legal, or organisational advice, and output
 
 © CloudPedagogy  
 
-Released under the Creative Commons Attribution–NonCommercial–ShareAlike 4.0 (CC BY-NC-SA 4.0) licence.
-
-You are free to share and adapt this tool for non-commercial purposes, provided appropriate attribution is given and derivative works are released under the same licence.
+Released under the MIT License.
