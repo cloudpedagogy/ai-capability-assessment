@@ -25,6 +25,35 @@ Rather than focusing on specific AI tools or technologies, the assessment examin
 - Explainable, rule-based interpretation  
 - No data storage, transmission, or tracking  
 
+## Running the Application Locally
+
+This application is built using a modern JavaScript toolchain and runs entirely in the browser.
+
+## Prerequisites
+
+Node.js (v20 or later recommended)
+
+npm (included with Node.js)
+
+Install and Run
+
+## Install dependencies:
+
+npm install
+
+
+## Start the local development server:
+
+npm run dev
+
+
+## Once running, your terminal will display a local URL (typically):
+
+http://localhost:5173
+
+Open this URL in your web browser to use the application.
+
+
 ## Disclaimer
 
 This tool is provided for reflective and developmental purposes only.  
