@@ -66,15 +66,9 @@ Open this URL in your web browser to use the application.
 
 ## Disclaimer
 
-This tool is provided for reflective and developmental purposes only.  
-It does not constitute professional, legal, or organisational advice, and outputs should be interpreted in context as inputs to discussion rather than definitive judgements.
-
-## What This Tool Is Not
-
-- ❌ Not an audit or compliance tool  
-- ❌ Not a benchmark against other organisations  
-- ❌ Not a technology-specific maturity model  
-- ❌ Not a diagnostic of individual performance  
+CloudPedagogy tools are provided for reflective and developmental purposes only.
+They do not constitute professional, legal, academic, or organisational advice.
+Outputs should be interpreted in context and used as inputs to discussion, not as definitive judgements or decisions. 
 
 ## Licensing
 
